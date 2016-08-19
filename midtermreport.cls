@@ -23,7 +23,7 @@ The LaTeX template for midterm report of BUAA]
 \ProcessOptions\relax
 
 % 引用ctexbook及基本设置
-\LoadClass[cs4size,a4paper,fancyhdr]{ctexbook}[2007/10/19]
+\LoadClass[cs4size,a4paper,fancyhdr]{ctexbook}[2015/05/16]
 
 %%%%%%%%%% global package %%%%%%%%%%
 % 全局通用宏包
