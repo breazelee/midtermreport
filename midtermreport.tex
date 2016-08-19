@@ -1,0 +1,35 @@
+% !TEX program = xelatex
+% 使用 ctexart文类，UTF-8 编码
+
+\documentclass[openany,oneside]{midtermreport}
+
+% 导言区，加载宏包和各项设置
+% \usepackage{}
+% 此处示意对参考文献和索引的设置
+
+\begin{document}
+
+\include{com_info}
+\include{student_info}
+
+    
+\maketitle % 封面页眉页脚页码样式
+
+% 目录页眉页脚页码样式
+\pagestyle{frontmatter}% 前言页眉页脚样式
+\tableofcontents
+
+% 正文页眉页脚页码样式
+\mainmatter
+
+\pagestyle{mainmatter} % 正文页眉页脚样式
+\relaxclearpage
+\printtitle
+\include{data/chapter1-plan} % 第一章chapter1.tex
+\include{data/chapter2-finished} % 第二章chapter1.tex
+\include{data/chapter3-keytechnology} % 第三章chapter1.tex
+\include{data/chapter4-next} % 第二章chapter2.tex
+
+\include{data/reference} % 第二章chapter2.tex
+
+\end{document}
