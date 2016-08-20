@@ -23,7 +23,7 @@ The LaTeX template for midterm report of BUAA]
 \ProcessOptions\relax
 
 % 引用ctexbook及基本设置
-\LoadClass[cs4size,a4paper,fancyhdr]{ctexbook}[2015/05/16]
+\LoadClass[cs4size,a4paper,fancyhdr]{ctexbook}[2007/10/19]
 
 %%%%%%%%%% global package %%%%%%%%%%
 % 全局通用宏包
@@ -124,30 +124,30 @@ The LaTeX template for midterm report of BUAA]
 \renewcommand{\tablename}{表}
 
 % 格式
-\ctexset{
-    chapter = {
-        format = \zihao{-3}\heiti,
-        nameformat = \zihao{-3}\heiti,
-        titleformat = \zihao{-3}\heiti,
-        name = {,},
-        aftername = {\quad},
-        number = \arabic{chapter},
-        beforeskip= {-.5\baselineskip},
-        afterskip= {.5\baselineskip}
-    },
-    section = {
-        format =  \zihao{4}\heiti ,
-        aftername = \quad ,
-        beforeskip = .5\baselineskip ,
-        afterskip = .5\baselineskip 
-    },
-    subsection = {
-        format={\zihao{-4}\heiti},
-        aftername={\quad},
-        beforeskip = .25ex plus 1ex minus .2ex ,
-        afterskip = .3ex plus .2ex 
-    }
-}
+\CTEXsetup[
+    format = \zihao{-3}\heiti,
+    nameformat = \zihao{-3}\heiti,
+    titleformat = \zihao{-3}\heiti,
+    name = {,},
+    aftername = {\quad},
+    number = \arabic{chapter},
+    beforeskip= {-.5\baselineskip},
+    afterskip= {.5\baselineskip}
+]{chapter}
+
+\CTEXsetup[
+    format =  \zihao{4}\heiti ,
+    aftername = \quad ,
+    beforeskip = .5\baselineskip ,
+    afterskip = .5\baselineskip 
+]{section}
+
+\CTEXsetup[
+    format={\zihao{-4}\heiti},
+    aftername={\quad},
+    beforeskip = .25ex plus 1ex minus .2ex ,
+    afterskip = .3ex plus .2ex 
+]{subsection}
 
 \newcommand\relaxclearpage{
     \let\tmpdp\cleardoublepage%
