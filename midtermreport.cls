@@ -375,7 +375,7 @@ The LaTeX template for midterm report of BUAA]
 \captionsetup[lstlisting]{format=mtrlstlisting,labelsep=quad}
 \renewcommand{\thefigure}{\arabic{figure}}
 \renewcommand{\thetable}{\arabic{table}}
-\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
+\renewcommand{\theequation}{\arabic{equation}}
 
 % Fix subfigure reference bug
 \let\p@subfigure=\thefigure
