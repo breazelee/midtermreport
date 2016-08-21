@@ -1,0 +1,1 @@
+call msmake report full

@@ -7,3 +7,11 @@
 
 
 欢迎大家使用
+
+
+编译：
+## Windows
+首次编译            单击 makefull.bat
+没有修改引用文献时  单击 make.bat
+修改参考文献后编译  单击 cleanempty.bat 然后单击makefull.bat
+备份之前            单击 cleanempty.bat
